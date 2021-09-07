@@ -2,15 +2,22 @@ console.log("Hello World!\n==========\n");
 console.log("Follow the steps in the README.md file to complete the exercises:\n==========\n");
 
 // Exercise 1
+
+/* 1. Initialize an integer to represent a favorite number and assign a value with a number of your choosing or you can assign a random number to this variable.<br>
+2. Use `window.prompt()` to ask the user to input a number, and store the result in a variable<br>
+3. Create an if-statement that if the guessed number is below the initial value, print out “too low”.<br>
+4. Create an else-if statement that if the number is higher than the initial value, print out “too high”.<br>
+5. Create an else statement that prints out “Congratulations!!!”.<br> */
+
 let favoriteNumber = 444;
 let userNumber = window.prompt('Guess my favorite number');
 
 if (userNumber < favoriteNumber) {
-  window.prompt('Too low');
+  console.log('Too low');
 } else if (userNumber > favoriteNumber) {
-  window.prompt('Too high');
+  console.log('Too high');
 } else {
-  window.prompt('Congratulations! Lucky Guess');
+  console.log('Congratulations! Lucky Guess');
 }
 
 // Exercise 2
@@ -25,24 +32,24 @@ let userInput2 = window.prompt('What is my favorite color?');
 
 switch (userInput2) {
   case 'red':
-    window.prompt('red is not my favorite color');
-  break;
-  case 'white':
-    window.prompt('white is not my favorite color');
-  break;
-  case ('blue'):
-    window.prompt('blue is not my favorite color');
-  break;
-  case ('black'):
-    window.prompt('black is not my favorite color');
-  break;
-  case ('green'):
-    window.prompt('green is not my favorite color');
+    console.log('red is not my favorite color');
     break;
-  case ('purple'):
-    window.prompt('purple is my favorite color');
+  case 'white':
+    console.log('white is not my favorite color');
+    break;
+  case ('blue'):
+    console.log('blue is not my favorite color');
+    break;
+  case ('black'):
+    console.log('black is not my favorite color');
+    break;
+  case ('green'):
+    console.log('green is not my favorite color');
+    break;
+  case (favoriteColor):
+    console.log(`${favoriteColor} is my favorite color`);
     break;
   default:
-    window.prompt('That is not my favorite color')
+    console.log('That is not my favorite color')
     break;
 }
